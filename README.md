@@ -49,8 +49,8 @@ The analysis takes the following inputs:
 - ``/DoubleElectron/Run2012B-22Jan2013-v1/RAW`` 
 - ``/JetHT/Run2012B-22Jan2013-v1/RAW`` 
 
-.. code-block:: console
 
+Commands: `
     $ cmsrel CMSSW_5_3_32
     $ cd CMSSW_5_3_32/src
     $ cmsenv
