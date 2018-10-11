@@ -27,44 +27,41 @@ The analysis takes the following inputs:
 
 2010 Selected RAW files:
 
-•	/MinimumBias/Run2010B-Apr21ReReco-v1/RAW 
-•	/Mu/Run2010B-Apr21ReReco-v1/RAW 
-•	/Electron/Run2010B-Apr21ReReco-v1/RAW 
-•	/Jet/Run2010B-Apr21ReReco-v1/RAW 
+•``/MinimumBias/Run2010B-Apr21ReReco-v1/RAW``
+•``/Mu/Run2010B-Apr21ReReco-v1/RAW``
+•``/Electron/Run2010B-Apr21ReReco-v1/RAW``
+•``/Jet/Run2010B-Apr21ReReco-v1/RAW``
 
 2011 Selected RAW files:
 
-•	/SingleMu/Run2011A-12Oct2013-v1/RAW 
-•	/SingleElectron/Run2011A-12Oct2013-v1/RAW 
-•	/DoubleElectron/Run2011A-12Oct2013-v1/RAW
-•	/DoubleMu/Run2011A-12Oct2013-v1/RAW
-•	/Jet/Run2011A-12Oct2013-v1/RAW 
+•``/SingleMu/Run2011A-12Oct2013-v1/RAW``
+•``/SingleElectron/Run2011A-12Oct2013-v1/RAW`` 
+•``/DoubleElectron/Run2011A-12Oct2013-v1/RAW``
+•``/DoubleMu/Run2011A-12Oct2013-v1/RAW``
+•``/Jet/Run2011A-12Oct2013-v1/RAW`` 
 
 2012 Selected RAW files:
 
-•	/MinimumBias/Run2012B-22Jan2013-v1/RAW 
-•	/SingleMu/Run2012B-22Jan2013-v1/RAW 
-•	/SingleElectron/Run2012B-22Jan2013-v1/RAW 
-•	/DoubleMuParked/Run2012B-22Jan2013-v1/RAW 
-•	/DoubleElectron/Run2012B-22Jan2013-v1/RAW 
-•	/JetHT/Run2012B-22Jan2013-v1/RAW 
-
-Analysis structure
-==================
+•``/MinimumBias/Run2012B-22Jan2013-v1/RAW`` 
+•``/SingleMu/Run2012B-22Jan2013-v1/RAW`` 
+•``/SingleElectron/Run2012B-22Jan2013-v1/RAW``
+•``/DoubleMuParked/Run2012B-22Jan2013-v1/RAW``
+•``/DoubleElectron/Run2012B-22Jan2013-v1/RAW`` 
+•``/JetHT/Run2012B-22Jan2013-v1/RAW`` 
 
 .. code-block:: console
 
-cmsrel CMSSW_5_3_32
-cd CMSSW_5_3_32/src
-cmsenv
-mkdir WorkDir
-cd WorkDir
-git clone git://github.com/cms-opendata-validation/recotest.git
+    $ cmsrel CMSSW_5_3_32
+    $ cd CMSSW_5_3_32/src
+    $ cmsenv
+    $ mkdir WorkDir
+    $ cd WorkDir
+    $ git clone git://github.com/cms-opendata-validation/recotest.git
 
-cd recotest
-ln -sf /cvmfs/cms-opendata-conddb.cern.ch/FT_53_LV5_AN1_RUNA FT_53_LV5_AN1
-ln -sf /cvmfs/cms-opendata-conddb.cern.ch/FT_53_LV5_AN1_RUNA.db FT_53_LV5_AN1_RUNA.db
-ls -l
-ls -l /cvmfs/
-cmsRun configFile.py
+    $ cd recotest
+    $ ln -sf /cvmfs/cms-opendata-conddb.cern.ch/FT_53_LV5_AN1_RUNA FT_53_LV5_AN1
+    $ ln -sf /cvmfs/cms-opendata-conddb.cern.ch/FT_53_LV5_AN1_RUNA.db FT_53_LV5_AN1_RUNA.db
+    $ ls -l
+    $ ls -l /cvmfs/
+    $ cmsRun configFile.py
 
