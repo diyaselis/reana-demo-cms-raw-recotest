@@ -1,6 +1,3 @@
-inputs:
-  class: Directory
-  path: ../data
 code:
   class: Directory
-path: ../code
+  path: ../code
